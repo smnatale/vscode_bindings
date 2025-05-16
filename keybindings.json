@@ -1,0 +1,100 @@
+[
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+e",
+    "when": "!sideBarVisible",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.view.explorer",
+        "workbench.files.action.focusFilesExplorer"
+      ]
+    }
+  },
+  {
+    "key": "ctrl+a",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.view.explorer",
+        "workbench.view.extension.continue"
+      ]
+    }
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "ctrl+tab",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+up",
+    "command": "editor.action.moveLinesUpAction"
+  },
+  {
+    "key": "shift+down",
+    "command": "editor.action.moveLinesDownAction"
+  },
+  {
+    "key": "shift+space",
+    "command": "editor.action.triggerSuggest"
+  },
+
+  // explorer keybinds
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  }
+]

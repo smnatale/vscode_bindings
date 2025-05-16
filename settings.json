@@ -1,0 +1,153 @@
+{
+  // formatting settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll.eslint": "always"
+  },
+
+  // font settings
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontLigatures": true,
+  "custom-ui-style.font.monospace": "CaskaydiaCove Nerd Font Mono",
+  "custom-ui-style.font.sansSerif": "CaskaydiaCove Nerd Font Mono",
+
+  // editor ui settings
+  "workbench.colorTheme": "Tokyo Dark",
+  "editor.lineNumbers": "relative",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "bottom",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "update.showReleaseNotes": false,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // custom css
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "custom",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.vertical": "auto",
+  "window.commandCenter": false,
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 18
+    }
+  },
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".quick-input-titlebar": "background: #090B10 !important",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+    ".title .monaco-icon-label.file-icon": "margin: 0 60px"
+  },
+
+  // vim settings
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["U"],
+      "commands": ["extension.vim_ctrl+r"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "d"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["leader", "s", "f"],
+      "commands": ["television.ToggleFileFinder"]
+    },
+    {
+      "before": ["leader", "s", "g"],
+      "commands": ["television.ToggleTextFinder"]
+    },
+    {
+      "before": ["leader", "Left"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "Right"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "Up"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "Down"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    {
+      "before": ["leader", "g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["leader", "s", "f"],
+      "commands": ["television.ToggleFileFinder"]
+    },
+    {
+      "before": ["leader", "s", "g"],
+      "commands": ["television.ToggleTextFinder"]
+    }
+  ]
+}
